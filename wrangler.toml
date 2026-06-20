@@ -12,3 +12,12 @@ database_id = "e8ed2cf3-90d2-4de1-9437-985ce8c43f99"
 [[r2_buckets]]
 binding = "karaoke-slides"
 bucket_name = "karaoke-bucket"
+
+[durable_objects]
+bindings = [
+  { name = "LOBBY_DO", class_name = "Lobby" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Lobby"]
