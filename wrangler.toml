@@ -1,0 +1,14 @@
+name = "powerpoint-karaoke"
+main = "src/index.js"
+compatibility_date = "2026-06-20"
+
+# Bind Cloudflare D1 Relational SQL Database
+[[d1_databases]]
+binding = "karaoke-db"
+database_name = "karaoke-db"
+database_id = "e8ed2cf3-90d2-4de1-9437-985ce8c43f99"
+
+# Bind Cloudflare R2 Object Storage Bucket 
+[[r2_buckets]]
+binding = "karaoke-slides"
+bucket_name = "karaoke-bucket"
